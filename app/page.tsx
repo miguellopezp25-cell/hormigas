@@ -9,7 +9,6 @@ import { CartDrawer } from "@/components/cart-drawer";
 const ReviewsSection = dynamic(() => import("@/components/reviews-section").then((m) => ({ default: m.ReviewsSection })));
 const BlogSection = dynamic(() => import("@/components/blog-section").then((m) => ({ default: m.BlogSection })));
 const LocationSection = dynamic(() => import("@/components/location-section").then((m) => ({ default: m.LocationSection })));
-const ContactSection = dynamic(() => import("@/components/contact-section").then((m) => ({ default: m.ContactSection })));
 
 export default function Home() {
   return (
@@ -22,7 +21,6 @@ export default function Home() {
           <ReviewsSection />
           <BlogSection />
           <LocationSection />
-          <ContactSection />
         </main>
         <Footer />
         <CartDrawer />

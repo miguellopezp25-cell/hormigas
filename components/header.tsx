@@ -14,7 +14,6 @@ const navLinks = [
   { href: "/hormigueros", label: "Hormigueros" },
   { href: "/#blog", label: "Blog" },
   { href: "/#ubicacion", label: "Tienda" },
-  { href: "/#contacto", label: "Contacto" },
 ];
 
 export function Header() {
