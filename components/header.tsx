@@ -1,8 +1,9 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useState } from "react";
-import { ShoppingCart, Menu, X, Bug } from "lucide-react";
+import { ShoppingCart, Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useCart } from "@/lib/cart-context";
 import { ThemeToggle } from "@/components/theme-toggle";
@@ -25,8 +26,8 @@ export function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <Link href="/" className="flex items-center gap-2">
-            <Bug className="h-8 w-8 text-primary" />
-            <span className="font-bold text-xl text-foreground">BlueAnts</span>
+            <Image src="/images/imperiologo.png" alt="Imperio Hormiga" width={36} height={36} className="h-9 w-auto" />
+            <span className="font-bold text-xl text-foreground">Imperio Hormiga</span>
           </Link>
 
           <nav className="hidden md:flex items-center gap-8">

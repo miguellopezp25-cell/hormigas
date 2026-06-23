@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation";
-import { Bug, Calendar, User, ArrowLeft, BookOpen } from "lucide-react";
+import Image from "next/image";
+import { Calendar, User, ArrowLeft, BookOpen } from "lucide-react";
 import Link from "next/link";
 import { blogPosts } from "@/lib/data";
 import type { Metadata } from "next";
@@ -15,10 +16,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const post = blogPosts.find((p) => p.slug === slug);
   if (!post) return {};
   return {
-    title: `${post.title} | BlueAnts`,
+    title: `${post.title} | Imperio Hormiga`,
     description: post.excerpt,
     openGraph: {
-      title: `${post.title} | BlueAnts`,
+      title: `${post.title} | Imperio Hormiga`,
       description: post.excerpt,
     },
   };
@@ -34,8 +35,8 @@ export default async function BlogPostPage({ params }: Props) {
       <header className="sticky top-0 z-50 bg-card/95 backdrop-blur-sm border-b border-border">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
           <Link href="/" className="flex items-center gap-2">
-            <Bug className="h-8 w-8 text-primary" />
-            <span className="font-bold text-xl text-foreground">BlueAnts</span>
+            <Image src="/images/imperiologo.png" alt="Imperio Hormiga" width={36} height={36} className="h-9 w-auto" />
+            <span className="font-bold text-xl text-foreground">Imperio Hormiga</span>
           </Link>
           <Link
             href="/#blog"

@@ -1,4 +1,5 @@
 import { notFound } from "next/navigation";
+import Image from "next/image";
 import { Bug, Thermometer, Droplets, Leaf, ShoppingCart, ArrowLeft } from "lucide-react";
 import Link from "next/link";
 import { antSpecies } from "@/lib/data";
@@ -16,10 +17,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const ant = antSpecies.find((a) => a.id === id);
   if (!ant) return {};
   return {
-    title: `${ant.name} | BlueAnts`,
+    title: `${ant.name} | Imperio Hormiga`,
     description: ant.description,
     openGraph: {
-      title: `${ant.name} | BlueAnts`,
+      title: `${ant.name} | Imperio Hormiga`,
       description: ant.description,
       images: [{ url: ant.image }],
     },
@@ -42,8 +43,8 @@ export default async function AntDetailPage({ params }: Props) {
       <header className="sticky top-0 z-50 bg-card/95 backdrop-blur-sm border-b border-border">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
           <Link href="/" className="flex items-center gap-2">
-            <Bug className="h-8 w-8 text-primary" />
-            <span className="font-bold text-xl text-foreground">BlueAnts</span>
+            <Image src="/images/imperiologo.png" alt="Imperio Hormiga" width={36} height={36} className="h-9 w-auto" />
+            <span className="font-bold text-xl text-foreground">Imperio Hormiga</span>
           </Link>
           <Link
             href="/hormigas"

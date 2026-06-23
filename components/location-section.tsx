@@ -29,7 +29,7 @@ export function LocationSection() {
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="Ubicación de BlueAnts"
+                title="Ubicación de Imperio Hormiga"
               />
             </div>
             <CardContent className="p-4">

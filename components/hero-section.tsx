@@ -1,4 +1,5 @@
-import { Bug, ArrowRight } from "lucide-react";
+import { Crown, ArrowRight, ShieldCheck } from "lucide-react";
+import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 
@@ -18,12 +19,12 @@ export function HeroSection() {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-8">
             <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium">
-              <Bug className="h-4 w-4" />
-              <span>Especialistas en mirmecología</span>
+              <Crown className="h-4 w-4" />
+              <span>Imperio Hormiga — Especialistas en mirmecología</span>
             </div>
             
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight text-balance">
-              Descubre el fascinante mundo de las hormigas
+              El imperio de las hormigas comienza aquí
             </h1>
             
             <p className="text-lg text-muted-foreground leading-relaxed max-w-xl">
@@ -64,14 +65,14 @@ export function HeroSection() {
           <div className="relative">
             <div className="aspect-square bg-primary/10 rounded-3xl overflow-hidden flex items-center justify-center">
               <div className="text-center p-8">
-                <Bug className="h-32 w-32 mx-auto text-primary mb-4" />
-                <p className="text-muted-foreground">Observa la naturaleza en tu hogar</p>
+                <Image src="/images/imperiologo.png" alt="Imperio Hormiga" width={160} height={160} className="mx-auto mb-4" />
+                <p className="text-muted-foreground">La reina de tu colección</p>
               </div>
             </div>
             <div className="absolute -bottom-6 -left-6 bg-card p-4 rounded-xl shadow-lg border border-border">
               <div className="flex items-center gap-3">
-                <div className="h-12 w-12 bg-accent/20 rounded-full flex items-center justify-center">
-                  <Bug className="h-6 w-6 text-accent" />
+                <div className="h-12 w-12 bg-primary/20 rounded-full flex items-center justify-center">
+                  <ShieldCheck className="h-6 w-6 text-primary" />
                 </div>
                 <div>
                   <div className="font-semibold text-foreground">Envío seguro</div>

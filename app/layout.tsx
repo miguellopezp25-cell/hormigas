@@ -8,32 +8,23 @@ const geist = Geist({ subsets: ["latin"] });
 const geistMono = Geist_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: 'BlueAnts | Hormigas y Hormigueros Profesionales',
+  title: 'Imperio Hormiga | Hormigas y Hormigueros Profesionales',
   description: 'Tu tienda especializada en colonias de hormigas vivas y hormigueros profesionales. Especies para principiantes y expertos. Envíos a todo México con garantía de llegada viva.',
   keywords: ['hormigas', 'hormigueros', 'colonias de hormigas', 'mirmecología', 'mascotas exóticas', 'México', 'formicarios'],
   openGraph: {
-    title: 'BlueAnts | Hormigas y Hormigueros Profesionales',
+    title: 'Imperio Hormiga | Hormigas y Hormigueros Profesionales',
     description: 'Tu tienda especializada en colonias de hormigas vivas y hormigueros profesionales.',
     type: 'website',
     locale: 'es_MX',
-    siteName: 'BlueAnts',
+    siteName: 'Imperio Hormiga',
   },
   icons: {
     icon: [
       {
-        url: '/icon-light-32x32.png',
-        media: '(prefers-color-scheme: light)',
-      },
-      {
-        url: '/icon-dark-32x32.png',
-        media: '(prefers-color-scheme: dark)',
-      },
-      {
-        url: '/icon.svg',
-        type: 'image/svg+xml',
+        url: '/images/imperiologo.png',
       },
     ],
-    apple: '/apple-icon.png',
+    apple: '/images/imperiologo.png',
   },
 }
 
@@ -56,7 +47,7 @@ export default function RootLayout({
           >
             <source src="/videos/banner.mp4" type="video/mp4" />
           </video>
-          <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-r from-primary/30 to-accent/30">
+          <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-r from-red-900/50 to-amber-900/50">
             <p className="text-white text-sm md:text-base font-medium tracking-wide drop-shadow-md">
               🐜 Envíos a todo México — Garantía de llegada viva
             </p>

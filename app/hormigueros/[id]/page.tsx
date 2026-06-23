@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation";
-import { Bug, Box, Check, ArrowLeft } from "lucide-react";
+import Image from "next/image";
+import { Box, Check, ArrowLeft } from "lucide-react";
 import Link from "next/link";
 import { formicaria } from "@/lib/data";
 import { AddToCartButton } from "@/components/add-to-cart-button";
@@ -16,9 +17,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const f = formicaria.find((fm) => fm.id === id);
   if (!f) return {};
   return {
-    title: `${f.name} | BlueAnts`,
+    title: `${f.name} | Imperio Hormiga`,
     description: `${f.name} - ${f.material}. ${f.features.join(", ")}.`,
-    openGraph: { title: `${f.name} | BlueAnts`, description: `${f.name} - ${f.material}.` },
+    openGraph: { title: `${f.name} | Imperio Hormiga`, description: `${f.name} - ${f.material}.` },
   };
 }
 
@@ -32,8 +33,8 @@ export default async function FormicariumDetailPage({ params }: Props) {
       <header className="sticky top-0 z-50 bg-card/95 backdrop-blur-sm border-b border-border">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
           <Link href="/" className="flex items-center gap-2">
-            <Bug className="h-8 w-8 text-primary" />
-            <span className="font-bold text-xl text-foreground">BlueAnts</span>
+            <Image src="/images/imperiologo.png" alt="Imperio Hormiga" width={36} height={36} className="h-9 w-auto" />
+            <span className="font-bold text-xl text-foreground">Imperio Hormiga</span>
           </Link>
           <Link href="/hormigueros" className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors">
             <ArrowLeft className="h-5 w-5" /><span>Ver todos</span>

@@ -261,7 +261,7 @@ export const blogPosts: BlogPost[] = [
     category: "Guías",
     image: "/images/lasius-niger.jpg",
     date: "2026-05-15",
-    author: "BlueAnts",
+    author: "Imperio Hormiga",
     slug: "guia-principiantes-primera-colonia",
   },
   {
@@ -272,7 +272,7 @@ export const blogPosts: BlogPost[] = [
     category: "Hormigueros",
     image: "/images/acrilico-modular-l.jpg",
     date: "2026-05-10",
-    author: "BlueAnts",
+    author: "Imperio Hormiga",
     slug: "tipos-hormigueros-cual-elegir",
   },
   {
@@ -283,7 +283,7 @@ export const blogPosts: BlogPost[] = [
     category: "Cuidados",
     image: "/images/camponotus-herculeanus.jpg",
     date: "2026-04-28",
-    author: "BlueAnts",
+    author: "Imperio Hormiga",
     slug: "importancia-hibernacion-colonias",
   },
 ];
@@ -327,11 +327,11 @@ export const reviews: Review[] = [
 ];
 
 export const storeInfo = {
-  name: "BlueAnts",
-  slogan: "Tu mundo de hormigas",
+  name: "Imperio Hormiga",
+  slogan: "El imperio de las hormigas",
   phone: "+52 55 1234 5678",
   whatsapp: "5215512345678",
-  email: "contacto@blueants.mx",
+  email: "contacto@imperiohormiga.mx",
   address: "Av. Insurgentes Sur 1234, Col. Del Valle, CDMX, México",
   coordinates: { lat: 19.3797, lng: -99.1778 },
   hours: {
@@ -340,8 +340,8 @@ export const storeInfo = {
     sunday: "Cerrado",
   },
   social: {
-    instagram: "@blueantsmx",
-    facebook: "BlueAntsMX",
-    youtube: "BlueAntsMexico",
+    instagram: "@imperiohormiga",
+    facebook: "ImperioHormigaMX",
+    youtube: "ImperioHormiga",
   },
 };
