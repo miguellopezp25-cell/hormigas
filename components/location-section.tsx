@@ -1,6 +1,6 @@
 "use client";
 
-import { MapPin, Clock, Phone, Mail, Instagram, Facebook, Youtube } from "lucide-react";
+import { MapPin, Clock, Instagram, Facebook, Youtube } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { storeInfo } from "@/lib/data";
 
@@ -60,30 +60,6 @@ export function LocationSection() {
                     <span className="text-muted-foreground">Domingo</span>
                     <span className="font-medium text-foreground">{storeInfo.hours.sunday}</span>
                   </div>
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card>
-              <CardContent className="p-6">
-                <h3 className="font-bold text-lg text-foreground mb-4">
-                  Contacto Directo
-                </h3>
-                <div className="space-y-4">
-                  <a 
-                    href={`tel:${storeInfo.phone}`}
-                    className="flex items-center gap-3 text-muted-foreground hover:text-primary transition-colors"
-                  >
-                    <Phone className="h-5 w-5" />
-                    <span>{storeInfo.phone}</span>
-                  </a>
-                  <a 
-                    href={`mailto:${storeInfo.email}`}
-                    className="flex items-center gap-3 text-muted-foreground hover:text-primary transition-colors"
-                  >
-                    <Mail className="h-5 w-5" />
-                    <span>{storeInfo.email}</span>
-                  </a>
                 </div>
               </CardContent>
             </Card>
